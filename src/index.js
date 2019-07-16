@@ -52,7 +52,7 @@ class USAMap extends React.Component {
           {this.buildPaths()}
           <g className="DC state">
             <path className="DC1" fill={this.fillStateColor("DC1")} d="M801.8,253.8 l-1.1-1.6 -1-0.8 1.1-1.6 2.2,1.5z" />
-            <circle className="DC2" onClick={this.clickHandler} data-name={"DC"} fill={this.fillStateColor("DC2")} stroke="#FFFFFF" strokeWidth="1.5" cx="801.3" cy="251.8" r="5" opacity="1" />
+            <circle className="DC2" onClick={this.clickHandler} onMouseOver={this.mouseOverHandler} data-name={"DC"} fill={this.fillStateColor("DC2")} stroke="#FFFFFF" strokeWidth="1.5" cx="801.3" cy="251.8" r="5" opacity="1" />
           </g>
         </g>
       </svg>
@@ -62,6 +62,7 @@ class USAMap extends React.Component {
 
 USAMap.propTypes = {
   onClick: PropTypes.func.isRequired,
+  onMouseOver: PropTypes.func.isRequired,
   width: PropTypes.number,
   height: PropTypes.number,
   title: PropTypes.string,
@@ -71,6 +72,7 @@ USAMap.propTypes = {
 
 USAMap.defaultProps = {
   onClick: () => {},
+  onMouseOver: () => {},
   width: 959,
   height: 593,
   defaultFill: "#D3D3D3",
