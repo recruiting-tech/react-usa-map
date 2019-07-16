@@ -62,6 +62,7 @@ class USAMap extends React.Component {
 
 USAMap.propTypes = {
   onClick: PropTypes.func.isRequired,
+  onMouseOver: PropTypes.func.isRequired,
   width: PropTypes.number,
   height: PropTypes.number,
   title: PropTypes.string,
@@ -71,6 +72,7 @@ USAMap.propTypes = {
 
 USAMap.defaultProps = {
   onClick: () => {},
+  onMouseOver: () => {},
   width: 959,
   height: 593,
   defaultFill: "#D3D3D3",
