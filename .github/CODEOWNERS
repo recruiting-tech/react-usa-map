@@ -1,0 +1,12 @@
+# React USA Map Code Owners
+# One of these groups/people must approve all Pull Requests
+
+# Documentation: https://help.github.com/articles/about-codeowners/
+
+# Order is important; the last matching pattern takes the most
+# precedence. When someone opens a pull request that only
+# modifies files in the db folder, only the db list of users and not the global
+# owner(s) will be requested for a review.
+
+# Set the NCSA MCA Team as the code owners for this project.
+* @recruiting-tech/mca
